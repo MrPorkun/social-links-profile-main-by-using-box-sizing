@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+html {
+    background-color: var(--Grey-900);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--White);
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    min-height: 750px;
+    max-width: auto;
+    background-color: var(--Grey-700);
+    border-radius: 2%;
+}
+
+.socail-profile{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -55%);
+}
+
+.socail-profile * {
+    margin-top: 1rem;
+}
+
+.socail-profile button{
+    margin-top: 0 !important;
+}
+
+.profile-user img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 20%;
+}
+
+.name-address p{
+    color: var(--Green);
+    font-weight: 700;
+    position: relative;
+    left: 1rem;
+    top: -.5rem;
+}
+
+.job p{
+    position: relative;
+    left: -10%;
+    top: -.8rem;
+    color: var(--White);
+}
+
+.button-zone button{
+    width: 300px;
+    height: 55px;
+    background-color: var(--Grey-800);
+    border-radius: .5rem;
+    border: none;
+    color: var(--White);
+    position: relative;
+    left: -5%;
+}
+
+.button-zone button:hover{
+    background-color: var(--Green);
+    scale: 1.1;
+    transition: ease all 1s;
+    cursor: pointer;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
